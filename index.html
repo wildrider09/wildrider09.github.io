@@ -6,266 +6,344 @@
 -->
 <html>
 	<head>
-		<title>Portfolio @ abhishek</title>
+		<title>Abhishek Garg | SDE @ Amazon</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-		<link rel = "icon" href = "images/bg.jpg"  type = "image/x-icon">
-
-		
+		<link rel="icon" href="images/bg.jpg" type="image/x-icon">
 		<style>
-		p.lower{
-  		font-size: 1.305em;
-		}
-
-		.bgimg {
-	    background-image: url('images/setbg.jpg');
-		}
-
-		.avatar {
-		vertical-align: middle;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		}
-
-</style>
+			p.lower { font-size: 1.305em; }
+			.bgimg { background-image: url('images/setbg.jpg'); }
+			.avatar { vertical-align: middle; width: 50px; height: 50px; border-radius: 50%; }
+			.experience-card { background: rgba(255,255,255,0.03); border-left: 3px solid #1da1f2; padding: 1.5em; margin-bottom: 1.5em; border-radius: 0 8px 8px 0; }
+			.experience-card h3 { margin-bottom: 0.3em; }
+			.experience-card .role { color: #1da1f2; font-weight: bold; font-size: 0.9em; }
+			.experience-card ul { margin-top: 0.8em; }
+			.skills-grid { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 1em 0; }
+			.skill-tag { background: rgba(29,161,242,0.15); color: #fff; padding: 0.4em 0.8em; border-radius: 20px; font-size: 0.85em; border: 1px solid rgba(29,161,242,0.3); }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">					
-				
-					
-				<!-- Intro -->
-					<div id="intro">
-							<img src="./images/my.jpg" style="height:140px; margin-left:-1100px; margin-top:-100px; border-radius: 50%; border: 2px solid #131212;" alt="">
-							
-						   <h3>	Bonjour! I'm MTech'22 graduate and I would like to <br />
-				<h1 style="font-size:160px;">{DEVELOP/}</h1>
-         			
-						<p style="font-size:1.5vw;">This is @bhishek garg, currently studying in IIIT Bangalore<br/>Welcome to my corner on the world wide web.<br/></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		<div id="wrapper" class="fade-in">
 
-				<!-- Header -->
-					<header id="header">
-						<a class="logo">Portfolio</a>
+			<!-- Intro -->
+			<div id="intro">
+				<img src="./images/my.jpg" style="height:140px; margin-left:-1100px; margin-top:-100px; border-radius: 50%; border: 2px solid #131212;" alt="">
+				<h3>Hey there! I'm a Software Development Engineer and I</h3>
+				<h1 style="font-size:160px;">{BUILD/}</h1>
+				<p style="font-size:1.5vw;">This is Abhishek Garg, SDE at Amazon — building scalable cloud systems<br/>Welcome to my corner on the world wide web.</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
+
+			<!-- Header -->
+			<header id="header">
+				<a class="logo">Portfolio</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="#about" style="font-size: 20px;">About me</a></li>
+					<li class="active"><a href="#experience" style="font-size: 20px;">Experience</a></li>
+					<li class="active"><a href="#project" style="font-size: 20px;">Projects</a></li>
+					<li class="active"><a href="#connect" style="font-size: 20px;">Contact</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/heatx09/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/wildrider09" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://medium.com/@abhisgg1997" target="_blank" rel="noopener noreferrer" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+					<li><a href="https://www.geeksforgeeks.org/profile/abhishekgarg15" target="_blank" rel="noopener noreferrer" class="icon solid fa-code"><span class="label">GFG</span></a></li>
+					<li><a href="https://twitter.com/heatx09" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="mailto:abhisgg1997@gmail.com" class="fas fa-envelope"></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About Me -->
+				<article class="post featured">
+					<header class="major">
+						<span id="about" class="date">
+							<script>document.write(new Date().toDateString());</script>
+						</span>
+						<h2>About Me</h2>
+						<p style="font-size:1.5vw;text-align:justify">
+							Focused on cloud computing, backend development, and system design at Amazon. Architected scalable solutions handling 1M+ devices and 1B+ events across distributed microservices, driving architecture decisions around trade-offs, cost efficiency, and business impact. Expertise in AWS, problem decomposition, and scalability thinking — from designing automated resource management saving $250K/year to building digital asset platforms serving 10,000+ assets. Delivered operational improvements, security enhancements, and data-driven implementations across cross-functional teams in high-scale production environments, shaping performance optimization, reliability, and architecture.
+						</p>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="#about"   style="font-size: 20px; ">About me</a></li>
-							<li class="active"><a href="#project" style="font-size: 20px; ">Projects</a></li>	
-							<li class="active"><a href="#connect" style="font-size: 20px; ">Send Enquiry</a></li>
-							<li class="active"><a href="#connect" style="font-size: 20px; "> Connect</a></li>
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="https://www.linkedin.com/in/heatx09/" style="font-size: 20px; " target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/wildrider09" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.facebook.com/heatx09/" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://twitter.com/heatx09" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ram101997@gmail.com" target="_blank" rel="noopener noreferrer" class="fas fa-envelope"></a></li>
-						
-						</ul>
-
-					</nav>
-										
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-										
-									<span id="about" class="date">
-										<script> document.write(new Date().toDateString()); </script>
-									</span>
-									<h3 >Here is a showcase of my projects and capabilites</h3>
-								<p  style="font-size:1.5vw;text-align:justify" >	Hello! I'm Abhishek Garg, from Dehradun, currently pursuing Masters from IIIT Bangalore in Computer Science and Engineering (2020-2022). I have completed my Bachelors from DIT Dehradun in Computer Science and Engineering (2015-2019) .<br/>I'm a Software Engineer primarily interested in full stack development and machine Learning.
-										Apart from this my key focus is algorithms, data structures and development using Devops. I love to explore new things and upcoming technologies. I care about building impactful, accecible and inclusive tech for everyone.
-								<br/>	<br/>	I enjoy writing tech blogs and also helping every tech beginner who I come across! I'm a passionate developer but more importantly, I'm passionate about technology 🖤<br/></p>
-								</header>	
-								<p href="#" class="image main"><img src="images/pic01.jpg" alt="" /></p>
-								<ul class="actions special">
-									<li> <p class="lower">Below's some stuff I recently developed,source code can be found on my <u><a href="https://github.com/wildrider09" target="_blank" rel="noopener noreferrer">github profile</a></u>
-									</p></li>
-								</ul>
-							</article>
-
-										<section class="posts" id="project">
-											
-											<article>
-												<header>
-													<span class="date">May 04, 2021</span>
-													<h2><a >Bidding Platform<br />
-													(implementing Devops)</a></h2>
-												</header>
-												<a  class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-												<p>An online bidding platform where user can post ads of its product and other users can bid on the product to buy.Also, entire production is done using devops tech. It has been deployed as iaas or developed further to meet your specific business requirements.</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Bidding-Platform" target="_blank" rel="noopener noreferrer" class="button">Click HERE for source code</a></li>
-												</ul>
-											</article>
-
-
-											<article>
-												<header>
-													<span class="date">April 27, 2021</span>
-													<h2><a >Spectrum Database Challenge<br />
-													</a></h2>
-												</header>
-												<a  class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-												<p>Given a database containing data from DotEcon’s Spectrum Award Database. For Australia's 3G and India's 3G spectrum data, we analyzed all the features, figured out their importantance and visuals and then designed a model for prediction.</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Spectrum-Data-Challenge" target="_blank" rel="noopener noreferrer" class="button">Click HERE for source code</a></li>
-												</ul>
-											</article>
-
-
-
-											<article>
-												<header>
-													<span class="date">April 11, 2021</span>
-													<h2><a>Document Validator<br />
-													(open source)</a></h2>
-												</header>
-												<a class="image fit"><img src="images/pic04.gif" alt="" /></a>
-												<p>An open source identity platform helping organisations and countries implement a digital, foundational ID in a cost effective way. We are working on automation of manual document verification process and trying its maximum accuracy for validation.</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Document_validator-MOSIP" target="_blank" rel="noopener noreferrer" class="button">CLick here for source code</a></li>
-												</ul>
-											</article>
-
-
-
-											<article>
-												<header>
-													<span class="date">March 20, 2021</span>
-													<h2><a>Scientific Calculator<br />
-													(IMplementing Devops)</a></h2>
-												</header>
-												<a class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-												<p>A mini scientific calculator using Dev-Ops tools like scm,jenkins,docker,open-ssh,multipass,ansible and elk. The entire process of manual deployment has been automated and for the ease of user converted to continuous deployment and development.</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Devops_Calculator" target="_blank" rel="noopener noreferrer" class="button">Click HERE for source code</a></li>
-												</ul>
-											</article>
-											
-
-
-											<article>
-												<header>
-													<span class="date">December 15, 2020</span>
-													<h2><a>Google Store <br />
-														Revenue Prediction</a></h2>
-												</header>
-												<a class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-												<p>Analyze a Google Merchandise Store customer dataset to predict revenue per customer.The outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis.</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Google-Analytics-Revenue-Preditcion" target="_blank" rel="noopener noreferrer"  class="button">Click HERE for source code</a></li>
-												</ul>
-											</article>
-
-
-
-											<article>
-												<header>
-													<span class="date">November 21, 2020</span>
-													<h2><a >Malware Prediction <br />
-													Analytics in PC's</a></h2>
-												</header>
-												<a  class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-												<p>The malware industry continues to be dedicated to evading traditional security measures. Once a computer is infected by malware, criminals can hurt consumers and enterprises. Can you help protect more than one billion machines from damage BEFORE it happens?</p>
-												<ul class="actions special">
-													<li><a href="https://github.com/wildrider09/Malware_Prediction" target="_blank" rel="noopener noreferrer" class="button">Click HERe for source code</a></li>
-												</ul>
-											</article>
-										
-										</section>
-
-						<!-- Footer -->
-							<footer >
-								<div class="pagination">
-									<a href="#" class="page active">1</a>
-								</div>
-							</footer>
-
+					<h3>Technical Skills</h3>
+					<div class="skills-grid">
+						<span class="skill-tag">Java</span>
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">C++</span>
+						<span class="skill-tag">SQL</span>
+						<span class="skill-tag">Spring Boot</span>
+						<span class="skill-tag">GraphQL</span>
+						<span class="skill-tag">AWS</span>
+						<span class="skill-tag">EC2</span>
+						<span class="skill-tag">ECS</span>
+						<span class="skill-tag">Lambda</span>
+						<span class="skill-tag">SQS/SNS</span>
+						<span class="skill-tag">Step Functions</span>
+						<span class="skill-tag">CloudWatch</span>
+						<span class="skill-tag">API Gateway</span>
+						<span class="skill-tag">Docker</span>
+						<span class="skill-tag">Jenkins</span>
+						<span class="skill-tag">CI/CD</span>
+						<span class="skill-tag">DynamoDB</span>
+						<span class="skill-tag">MySQL</span>
+						<span class="skill-tag">PostgreSQL</span>
+						<span class="skill-tag">MongoDB</span>
+						<span class="skill-tag">Distributed Systems</span>
+						<span class="skill-tag">Microservices</span>
+						<span class="skill-tag">REST APIs</span>
+						<span class="skill-tag">GenAI</span>
+						<span class="skill-tag">DevOps</span>
+						<span class="skill-tag">Design Patterns</span>
 					</div>
+
+					<p href="#" class="image main"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=80" alt="coding workspace" /></p>
+
+					<ul class="actions special">
+						<li><p class="lower">Check out my work experience and projects below 👇</p></li>
+					</ul>
+				</article>
+
+				<!-- Experience Section -->
+				<article class="post" id="experience">
+					<header class="major">
+						<h2>Professional Experience</h2>
+					</header>
+
+					<div class="experience-card">
+						<h3>Amazon — Software Development Engineer</h3>
+						<span class="role">July 2022 – Present | Bengaluru, India</span>
+						<br><br>
+						<strong>Alexa Connect Kit Cloud & Snyder Team</strong> — IoT cloud platform for Alexa smart home devices
+						<ul>
+							<li>Orchestrated ticket load reduction achieving <strong>50% cut</strong> in sev-2/3/4 tickets (~40/week → ~20); optimized CloudWatch alarm thresholds through Agile sprints</li>
+							<li>Redesigned server-side caching strategy cutting registry service calls from <strong>1000+ TPS</strong> to optimal levels, boosting throughput and enabling low latency</li>
+							<li>Upgraded event ingestion service handling <strong>1B+ events</strong> across distributed microservices; architected AEM subscription management for event routing via SQS/SNS</li>
+							<li>Architected device setup experience for Alexa handling <strong>1M+ Matter devices</strong>, coordinating 3+ service integrations, reducing manual setup friction by 80%</li>
+							<li>Designed Automated Resource Management system reducing operational costs by <strong>$250K/year</strong></li>
+							<li>Pioneered automated partner notification for <strong>~6,000 product accounts</strong>; secured business/legal/PR approvals ensuring data security compliance</li>
+							<li>Built CDK infrastructure; root-caused <strong>$12K/month</strong> ECS Fargate misconfiguration; adopted AI-assisted development accelerating dev cycles by <strong>30%</strong></li>
+						</ul>
+						<br>
+						<strong>Private Brands Central (PBC)</strong> — Product lifecycle management for Amazon private labels
+						<ul>
+							<li>Engineered Artwork Library using DocumentDB, OpenSearch, Step Functions for 1.4K artworks, 2.5K products — <strong>$500K/year savings</strong></li>
+							<li>Streamlined bulk task reassignment saving <strong>730 hours/year</strong> and <strong>525K clicks</strong>; expanded IAM authorization framework</li>
+						</ul>
+					</div>
+
+					<div class="experience-card">
+						<h3>Qualcomm — Software Engineering Intern</h3>
+						<span class="role">January 2022 – June 2022</span>
+						<ul>
+							<li>Fine-tuned backend test automation shortening failure analysis time by <strong>40%</strong> under the AI/ML team</li>
+							<li>Built end-to-end test case generation, faulty commit detection, and nightly build verification using Python, MongoDB, and YAML</li>
+						</ul>
+					</div>
+
+					<h3 style="margin-top: 2em;">🎓 Education</h3>
+					<div class="experience-card">
+						<strong>Master of Technology (CSE)</strong> — IIIT Bangalore, 2022 | <strong>3.45/4.00</strong><br>
+						<strong>Bachelor of Technology (CSE)</strong> — DIT University, 2019 | <strong>8.85/10.00</strong><br><br>
+						🏅 GATE 2020 (CS) — All India Rank 1014 (98.96 percentile) out of 97,481 candidates
+					</div>
+
+					<h3 style="margin-top: 2em;">🏆 Achievements</h3>
+					<div class="experience-card">
+						<ul>
+							<li><strong>Code velocity:</strong> 346 shipped CRs, 89 packages, 68K+ lines</li>
+							<li><strong>Resolved</strong> 200+ production tickets as on-call champion</li>
+							<li><strong>Bar Raiser eligible:</strong> 40+ interviews; mentored 2 interns to full-time roles</li>
+						</ul>
+					</div>
+				</article>
+
+				<!-- Projects -->
+				<section class="posts" id="project">
+
+					<article>
+						<header>
+							<span class="date">2022</span>
+							<h2><a>Bidding Platform<br />(Spring Boot + DevOps)</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="auction bidding" /></a>
+						<p>Auction system with Spring Boot backend, REST API layer, CI/CD pipeline (Jenkins, Docker), secure coding practices, attack prevention, and 5 vulnerability fixes.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Bidding-Platform" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2021</span>
+							<h2><a>Document Validator<br />(MOSIP — Open Source)</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=600&q=80" alt="identity verification" /></a>
+						<p>Server-side REST API for identity verification using OCR with sub-200ms response time, delivering 90%+ accuracy across multiple ID formats. Python, Tesseract OCR, Postman.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Document_validator-MOSIP" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2021</span>
+							<h2><a>DevOps Calculator<br />(CI/CD Pipeline)</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80" alt="devops pipeline" /></a>
+						<p>Scientific calculator with full CI/CD pipeline — Jenkins, Docker, Ansible, ELK stack. Automated the entire manual deployment process into continuous deployment.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Devops_Calculator" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2021</span>
+							<h2><a>Spectrum Data<br />Challenge</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="data analytics" /></a>
+						<p>Analysis of DotEcon's Spectrum Award Database (1994–2020). Analyzed features for Australia's 3G and India's 3G spectrum data, built prediction models.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Spectrum-Data-Challenge" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2020</span>
+							<h2><a>Google Store<br />Revenue Prediction</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="google analytics" /></a>
+						<p>Predict revenue per customer from Google Merchandise Store data. Actionable operational changes and better marketing budget allocation using ML models.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Google-Analytics-Revenue-Preditcion" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2020</span>
+							<h2><a>Malware Prediction<br />Analytics</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80" alt="cybersecurity malware" /></a>
+						<p>ML model to predict malware infections using system telemetry data. Protecting machines from damage before it happens using predictive analytics.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Malware_Prediction" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2020</span>
+							<h2><a>AI Board Game<br />Trainer</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="board game AI" /></a>
+						<p>AI framework to train humans from beginner to expert level in board games interactively. Implemented using game theory and search algorithms in C.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/AI-Board-Game-Trainer" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">2021</span>
+							<h2><a>Railway Reservation<br />System</a></h2>
+						</header>
+						<a class="image fit"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=600&q=80" alt="railway train" /></a>
+						<p>Railway booking app — ticket booking, seat availability, preferred seat selection, and reservations. Built with Java, similar to Indian Railways IRCTC.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/wildrider09/Railway-reservation" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+						</ul>
+					</article>
+
+				</section>
 
 				<!-- Footer -->
-				
-					<footer id="footer">
-						<section>
-								<form method="post" action="https://formsubmit.co/ram101997@gmail.com" >
-								<div class="fields">
-									<div class="field">
-										<label id="form" for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Like my work? Get in touch with me" /></li>
-								</ul>
-							</form>
-						
-						</section>
-						<section class="split contact">
-							<section id="connect" class="alt">
-								<h3 style="font-size: medium;">Address</h3>
-								<p style="font-size: medium;">Dehradun<br />
-								UK-248001, India</p>
-							</section>
-							<section>
-								<h3 style="font-size: medium;" >Phone</h3>
-								<p style="font-size: medium;">(+91) 89799-25143</p>
-							</section>
-							<section>
-								<h3 style="font-size: medium;">Email</h3>
-								<p style="font-size: medium;"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ram101997@gmail.com" target="_blank" rel="noopener noreferrer" >ram101997@gmail.com</a></p>
-							</section>
-							<section >
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/heatx09/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/wildrider09" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.facebook.com/heatx09/" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://twitter.com/heatx09" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							
-								</ul>
-							</section>
-						</section>
-					</footer>
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Created by @ abhishek &reg;</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Images: <a href="https://unsplash.com/">UNSPLASH</a></li></ul>
+				<footer>
+					<div class="pagination">
+						<a href="#" class="page active">1</a>
 					</div>
+				</footer>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="https://formsubmit.co/abhisgg1997@gmail.com">
+						<div class="fields">
+							<div class="field">
+								<label id="form" for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Like my work? Get in touch with me" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section id="connect" class="alt">
+						<h3 style="font-size: medium;">Address</h3>
+						<p style="font-size: medium;">Bengaluru<br />Karnataka, India</p>
+					</section>
+					<section>
+						<h3 style="font-size: medium;">Phone</h3>
+						<p style="font-size: medium;">(+91) 89799-25143</p>
+					</section>
+					<section>
+						<h3 style="font-size: medium;">Email</h3>
+						<p style="font-size: medium;"><a href="mailto:abhisgg1997@gmail.com">abhisgg1997@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/heatx09/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/wildrider09" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://medium.com/@abhisgg1997" target="_blank" rel="noopener noreferrer" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+							<li><a href="https://www.geeksforgeeks.org/profile/abhishekgarg15" target="_blank" rel="noopener noreferrer" class="icon solid fa-code"><span class="label">GFG</span></a></li>
+							<li><a href="https://twitter.com/heatx09" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Abhishek Garg 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
