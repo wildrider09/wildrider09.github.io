@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Abhishek Garg</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #0a0a0f; padding: 0; }
+        .container { max-width: 960px; margin: 0 auto; padding: 3rem 2rem; }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 0.3rem; }
+        .subtitle { color: #8892b0; margin-bottom: 3rem; font-size: 1rem; }
+        .project { background: #112240; border-radius: 10px; padding: 2rem; margin-bottom: 2rem; border: 1px solid #233554; transition: transform 0.2s; }
+        .project:hover { transform: translateY(-3px); border-color: #64ffda; }
+        .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem; }
+        .project h2 { font-size: 1.3rem; color: #ccd6f6; margin-bottom: 0.3rem; }
+        .project-meta { color: #64ffda; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .project p { color: #8892b0; margin-bottom: 0.8rem; }
+        .project strong { color: #ccd6f6; }
+        .project ul { margin: 0.8rem 0 1rem 1.5rem; color: #8892b0; }
+        .project li { margin-bottom: 0.5rem; }
+        .project li strong { color: #64ffda; }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+        .tags span { background: rgba(100,255,218,0.1); color: #64ffda; padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.75rem; border: 1px solid rgba(100,255,218,0.2); }
+        .impact { background: rgba(100,255,218,0.05); border: 1px solid rgba(100,255,218,0.15); border-radius: 6px; padding: 0.8rem 1rem; margin-top: 1rem; }
+        .impact-title { color: #64ffda; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.4rem; }
+        .impact p { color: #a8b2d1; margin: 0; font-size: 0.9rem; }
+        .back-link { display: inline-block; color: #64ffda; text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { text-decoration: underline; }
+        a { color: #64ffda; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<a href="https://wildrider09.github.io/" class="back-link">← Back to Portfolio</a>
+
+<h1>Projects at Amazon</h1>
+<p class="subtitle">IoT Cloud Platform · Smart Home Energy · Distributed Systems · GenAI · Developer Tooling</p>
+
+<!-- Project 1: Smart Home Energy Advisor -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>Smart Home Energy Advisor — AI-Powered Conversational Energy Intelligence</h2>
+            <span class="project-meta">2025 · GenAI · IoT · Full-Stack</span>
+        </div>
+    </div>
+    <p>Built an end-to-end AI-powered energy advisor for a smart thermostat that simulates realistic HVAC physics, detects anomalies in real-time, and lets users chat with an LLM to understand and optimize their home energy usage. The system integrates live weather data, demand response lifecycle management, and proactive intelligence — all running as a single Spring Boot application.</p>
+    <ul>
+        <li><strong>3 Intelligence Pillars:</strong> HVAC Health (aux heater overuse, filter degradation, connectivity loss), Energy Bill Explainability (cost breakdown with weather correlation, runtime spike detection), and Demand Response & Clean Energy (5-state DR lifecycle with pre-cooling strategies).</li>
+        <li><strong>AI Integration:</strong> Amazon Bedrock (Claude) powers conversational chat, proactive anomaly alerts, and autonomous thermostat optimization every 60 seconds. Context-rich prompts inject full device state, 50 recent events, active anomalies, weather forecast, and learned user preferences.</li>
+        <li><strong>Physics Simulator:</strong> Models thermal drift (0.03°F/min toward outdoor), cooling (0.15°F/min), heating (0.12°F/min), and aux heating (0.20°F/min). Uses real Bangalore weather via Open-Meteo API. Generates DR events 3–4 times per simulated week with full lifecycle (SCHEDULED → PRE_COOLING → ACTIVE → RECOVERY).</li>
+        <li><strong>User Preference Learning:</strong> Records manual overrides (mode, setpoint, outdoor temp, time) and injects patterns into optimization prompts — AI learns to respect user comfort preferences over time.</li>
+        <li><strong>Live Dashboard:</strong> Real-time web UI with temperature ring, HVAC component status, runtime bars, cost panel, Energy Star V2 score, and 15 suggestion buttons. Polls backend every 1.5s for state, 3s for alerts.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>12 REST API endpoints, 5 anomaly detectors, real-time weather integration, autonomous AI optimization. Demonstrates production-grade GenAI integration with IoT telemetry — from physics simulation to conversational UX. <strong>15% projected energy savings</strong> through AI optimization + filter maintenance + DR participation.</p>
+    </div>
+    <div class="tags">
+        <span>Java 17</span>
+        <span>Spring Boot 3.2</span>
+        <span>Amazon Bedrock</span>
+        <span>Claude</span>
+        <span>H2 Database</span>
+        <span>REST API</span>
+        <span>Open-Meteo API</span>
+        <span>Vanilla JS</span>
+        <span>IoT Simulation</span>
+        <span>Anomaly Detection</span>
+        <span>Demand Response</span>
+    </div>
+</div>
+
+<!-- Project 2: Automated Partner Communication -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>Automated Partner Communication System</h2>
+            <span class="project-meta">2024 · Platform Lifecycle Management</span>
+        </div>
+    </div>
+    <p>Designed and implemented an automated notification pipeline to communicate with ~6,000 third-party partner accounts before scheduled product deletion. The system handles the full lifecycle: identifying inactive products, notifying owners, providing a response window, and executing deletion only after the baking period.</p>
+    <ul>
+        <li><strong>Challenge:</strong> Partner email addresses are classified as sensitive data (PII). Direct email access would require the service to be classified as a critical-tier application with extensive compliance overhead.</li>
+        <li><strong>Solution:</strong> Integrated with a centralized communication service that maps vendor IDs to developer emails internally — keeping PII out of our service boundary. Constructed notification requests using registered client credentials and pre-approved email templates.</li>
+        <li><strong>Workflow:</strong> Inactive product identified → notification sent via communication service → status updated to PENDING_DELETION → if owner responds within window, product moved to protected list → otherwise, deletion proceeds after baking period.</li>
+        <li><strong>Compliance:</strong> Secured business, legal, and PR approvals for outbound partner communications. Designed email templates compliant with outbound communication policies.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>Automated communication for <strong>~6,000 inactive product accounts</strong>. Eliminated manual partner outreach. Ensured data security compliance by keeping PII outside service boundary. Enabled safe, automated product lifecycle management at scale.</p>
+    </div>
+    <div class="tags">
+        <span>Java</span>
+        <span>SQS</span>
+        <span>DynamoDB</span>
+        <span>REST APIs</span>
+        <span>Email Templates</span>
+        <span>Data Privacy</span>
+        <span>Compliance</span>
+    </div>
+</div>
+
+<!-- Project 3: AI Knowledge Base -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>AI-Powered Team Knowledge Base</h2>
+            <span class="project-meta">2025 · Developer Tooling · GenAI</span>
+        </div>
+    </div>
+    <p>Built a serverless pipeline that syncs ~120 curated wiki pages (oncall runbooks, architecture docs, service designs) into an Amazon Bedrock Knowledge Base — queryable directly from AI development tools via the Model Context Protocol (MCP). Enables developers to ask natural language questions about team systems and get contextual answers with citations.</p>
+    <ul>
+        <li><strong>Architecture:</strong> EventBridge (daily cron) → Lambda (crawl + convert) → S3 (markdown files) → Bedrock KB (chunk + embed with Titan) → MCP Server → AI coding assistants.</li>
+        <li><strong>Sync Engine:</strong> Authenticates via bot account token, recursively discovers all child pages from seed URLs using CQL queries, converts Confluence HTML to clean Markdown, implements incremental sync via version cache (skips unchanged pages).</li>
+        <li><strong>Self-Service:</strong> Team members add doc URLs to a wiki page — next daily sync picks them up automatically with zero code changes.</li>
+        <li><strong>One-Command Setup:</strong> Created a setup script that configures credentials, registers the MCP server, and adds rules files — reducing onboarding from manual multi-step process to ~1 minute.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>120+ pages of team knowledge instantly queryable via AI tools. Reduced context-switching and ramp-up time for new team members. Self-service doc additions with zero deployment overhead. One-minute onboarding for the entire team.</p>
+    </div>
+    <div class="tags">
+        <span>AWS Lambda</span>
+        <span>Amazon Bedrock</span>
+        <span>S3</span>
+        <span>EventBridge</span>
+        <span>MCP</span>
+        <span>RAG</span>
+        <span>Python</span>
+        <span>Bash</span>
+        <span>GenAI</span>
+    </div>
+</div>
+
+<!-- Project 4: SHEP Improvements -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>Event Processing Pipeline — Caching Redesign & API Migration</h2>
+            <span class="project-meta">2025 · High-Scale Event Processing</span>
+        </div>
+    </div>
+    <p>Redesigned the caching architecture and API integration layer for a high-throughput event processing service handling <strong>900 million events daily</strong> from IoT smart home devices. The service filters, enriches, and routes device state updates to downstream processors for energy estimation and consumption tracking.</p>
+    <ul>
+        <li><strong>Problem:</strong> A single high-volume customer (1,700+ endpoints) was generating 1,000+ TPS to an upstream registry service due to incorrect cache key design. Each unique endpoint triggered a full registry fetch, but only one result was cached — causing redundant calls, throttling, and data loss.</li>
+        <li><strong>Root Cause:</strong> Composite cache key {customerId + endpointId} meant N endpoints = N identical registry calls. Combined with in-memory cache isolation across 200 ECS tasks and burst traffic patterns during cache expiration, the system hit service-level throttle limits.</li>
+        <li><strong>Solution 1 (Short-term):</strong> Migrated from V1 to V2 registry API — enabling direct endpoint/entity queries via Global Secondary Index, eliminating hot partition issues and reducing per-call latency from 8000ms to sub-100ms.</li>
+        <li><strong>Solution 2 (Long-term):</strong> Designed migration from broadcast event bus to subscription-based event messaging. Instead of receiving all 900M events and filtering downstream, the system now creates targeted subscriptions per device — reducing processed events by 60%.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>Eliminated registry throttling entirely. Reduced daily event processing from 900M to ~370M relevant events. Cut downstream service calls by 60%. Projected infrastructure cost savings from reduced SQS, ECS, and CloudWatch usage.</p>
+    </div>
+    <div class="tags">
+        <span>Java</span>
+        <span>ECS Fargate</span>
+        <span>SQS</span>
+        <span>Guava Cache</span>
+        <span>DynamoDB GSI</span>
+        <span>Event-Driven Architecture</span>
+        <span>API Migration</span>
+        <span>Subscription Model</span>
+    </div>
+</div>
+
+<!-- Project 5: Ticket Load Reduction -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>Operational Ticket Load Reduction Program</h2>
+            <span class="project-meta">2025 · IoT Cloud Platform</span>
+        </div>
+    </div>
+    <p>Led a data-driven initiative to reduce operational incident volume across a fleet of 5 distributed microservices processing energy data for 1M+ IoT devices. Analyzed 310+ production incidents from the prior year, categorized them by root cause and service, and designed a phased remediation strategy.</p>
+    <ul>
+        <li><strong>Problem:</strong> 35–40 incoming tickets/week with 120+ open backlog, preventing on-call engineers from addressing real issues. 81% of incidents concentrated in 5 services across 6 root causes.</li>
+        <li><strong>Approach:</strong> Hybrid strategy combining immediate noise reduction (alarm aggregation, threshold tuning, obsolete alarm removal) with service-level refactoring (retry mechanisms, exception handling, performance optimization).</li>
+        <li><strong>Phase 0 — Noise Reduction:</strong> Aggregated duplicate alarms into composite alerts, deprecated alarms for decommissioned services, fixed thresholds for auto-scaling-related false positives. Impact: 37% reduction in incoming Sev-3 tickets.</li>
+        <li><strong>Phase 1–2 — Service Hardening:</strong> Refactored event processor and gateway services with proper exception handling, retry with backoff, and dependency resolution. Fixed integration tests to unblock CI/CD pipelines.</li>
+        <li><strong>Phase 3 — Resource Optimization:</strong> Profiled high CPU/memory services, identified memory leaks, applied caching strategies to reduce computational overhead.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p><strong>50% reduction</strong> in weekly incident rate (40/week → 20). Reduced open ticket backlog from 120+ to under 25. Improved on-call engineer productivity and system stability across the entire service fleet.</p>
+    </div>
+    <div class="tags">
+        <span>CloudWatch</span>
+        <span>ECS Fargate</span>
+        <span>Distributed Systems</span>
+        <span>Alarm Aggregation</span>
+        <span>Data Analysis</span>
+        <span>Operational Excellence</span>
+    </div>
+</div>
+
+<!-- Project 6: Cloud Cost Anomaly -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>Cloud Cost Anomaly Investigation — ECS Fargate Misconfiguration</h2>
+            <span class="project-meta">2025 · Cost Optimization · Root Cause Analysis</span>
+        </div>
+    </div>
+    <p>Investigated and resolved a sudden 5x spike in AWS costs ($2.5K/month → $12K/month) for a pre-production environment. Traced the root cause through multiple layers of infrastructure to identify a misconfigured ECS Fargate service causing runaway NAT Gateway traffic.</p>
+    <ul>
+        <li><strong>Symptoms:</strong> EC2-Other costs spiked from $195 to $9,391 in 3 months. NAT Gateway metrics showed packets jumping from thousands to ~65M, with outbound traffic reaching 130–216 GB per subnet.</li>
+        <li><strong>Root Cause:</strong> A sidecar container (credential manager) failed to start due to a missing IAM role configuration. ECS's naive retry strategy kept destroying and recreating tasks. Each restart downloaded 3.5 GB + 3 GB Docker images through the NAT Gateway. At several restarts per minute, this accumulated to ~3 TB/month of NAT traffic.</li>
+        <li><strong>Fix:</strong> Disabled the misconfigured tasks immediately (cost dropped to &lt;$1.5K/month). Implemented ECS Deployment Circuit Breaker to prevent runaway restarts. Added cost anomaly alarms on pre-production accounts.</li>
+        <li><strong>Broader Analysis:</strong> Also evaluated whether to merge the gateway service into the event processor — concluded the $1,300/month cost and low ticket volume (25 in 6 months) didn't justify 8–10 weeks of migration effort.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>Saved <strong>$12K/month</strong> ($144K/year annualized) by identifying and fixing the misconfiguration. Implemented circuit breaker pattern to prevent recurrence. Established cost monitoring for non-production environments.</p>
+    </div>
+    <div class="tags">
+        <span>ECS Fargate</span>
+        <span>NAT Gateway</span>
+        <span>Cost Explorer</span>
+        <span>Circuit Breaker</span>
+        <span>Docker</span>
+        <span>VPC Networking</span>
+        <span>Root Cause Analysis</span>
+    </div>
+</div>
+
+<!-- Project 7: Energy Star V2 -->
+<div class="project">
+    <div class="project-header">
+        <div>
+            <h2>EPA Energy Star V2 Compliance Reporting</h2>
+            <span class="project-meta">2024 · Regulatory Compliance · Data Engineering</span>
+        </div>
+    </div>
+    <p>Led the migration of Energy Star compliance reporting from V1 to V2 format for a smart thermostat product line. The EPA mandates biannual energy savings reports based on runtime data from a randomized sample of 1,250 thermostats across 5 climate zones — used to retain Energy Star certification.</p>
+    <ul>
+        <li><strong>What it does:</strong> Collects 12 months of hourly thermostat runtime data (heating/cooling runtimes, setpoints, indoor temperatures), generates metadata + interval data files per EPA specifications, runs them through EPA's field savings software to produce energy savings statistics.</li>
+        <li><strong>V2 Migration:</strong> Updated partial and final report generation scripts to V2 format — new fields for multi-stage heating/cooling, precise temperature data, and updated validation rules. Chose a phased approach: promote scripts to V2 first using existing data pipeline, then migrate data source separately.</li>
+        <li><strong>Data Pipeline:</strong> Raw device telemetry → hourly aggregation via EMR jobs → time-series storage → report generation scripts → EPA validation software → submission to hardware partner for EPA filing.</li>
+        <li><strong>Execution:</strong> Coordinated across 4 engineers, unblocked production pipeline, generated sample reports, validated against EPA software, and delivered final reports ahead of the January 2025 deadline.</li>
+    </ul>
+    <div class="impact">
+        <div class="impact-title">Impact</div>
+        <p>Successfully delivered V2-compliant Energy Star reports covering 1,250 thermostats across 5 climate zones. Met EPA deadline with zero defects. Retained Energy Star certification for the product line. Established repeatable process for future biannual submissions.</p>
+    </div>
+    <div class="tags">
+        <span>Python</span>
+        <span>EMR</span>
+        <span>S3</span>
+        <span>Data Pipeline</span>
+        <span>EPA Compliance</span>
+        <span>Time-Series Data</span>
+        <span>Report Generation</span>
+    </div>
+</div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>
